@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <title> g.photogrise  </title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section id = "banner">  
+    <div class="banner-text"> 
+      <h1> g.photogrise </h1>
+      <p> Just an ordinary gallery. </p>
+    </div>  
+</section>  
+
+<div  id="sideNav">
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT ME</a></li>
+      <li><a href="#">GALLERY</a></li>
+      <li><a href="#">MY GEAR</a></li>
+      <li><a href="#">CONTACT ME</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div id="menuBtn">
+  <img src="png/menu.png" id="menu">
+</div>
+<script>
+  var menuBtn = document.getElementById("menuBtn")
+  var sideNav = document.getElementById("sideNav")
+  var menu = document.getElementById("menu")
+
+  sideNav.style.right = "-250px"
+
+  menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = 0;
+        menu.src = "png/close.png"
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.src = "png/menu.png"
+    }
+
+  }   
+</script>
+
+
+
+</body>
+
+</html>
