@@ -28,6 +28,7 @@
     font-style: italic;
 }
 
+
 #sideNav{
     width: 250px;
     height: 100vh;
@@ -176,6 +177,32 @@ nav ul li a{
 .galleryimg img:hover{
     filter: grayscale(100%);
     transform: scale(1.1);
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+}
+
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    position: center;
+    display: block;
+    text-align: center;
+    background: black;
+    margin: auto;
+    padding: 12px 0;
+    color: white;
+    border: .5px solid white;
+    cursor: pointer;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover{
+    background: white;
+    color: black;
+    border: .5px solid black;
 }
 
 /*--my gear--*/
